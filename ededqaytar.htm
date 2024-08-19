@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 10%;
+            height: 20px;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="a" placeholder="Reqem daxil edin">
+    <button onclick="yoxla()">Yoxla</button> <br>
+    <span id="ntc"></span>
+    <script>
+        const a=document.getElementById('a')
+        const ntc=document.getElementById('ntc')
+
+        let ededler=["1","3","5","6",'3',"2","5","7","91","5","90","37","4848","281","14"]
+        function yoxla(){
+
+         
+           
+           if(ededler.includes(a.value)){
+            ntc.innerHTML=a.value
+           }else{
+            ntc.innerHTML= '-1'
+           }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span id="ntc"></span>
+    <script>
+
+        const ntc = document.getElementById('ntc')
+        let kod = ''
+        for (let i = 0; i <= 100; i++) {
+
+            if (i % 3 === 0  && i % 5 === 0) {
+                kod+= "FizzBuzz <br>" 
+            }
+            else if (i % 3 === 0) {
+              kod+= "Fizz<br>"
+            } 
+            else if ( i % 5 === 0){
+          kod+="buzz<br>"
+            } 
+            else{
+                kod+=i+ '<br>'
+            }
+
+
+        }
+        ntc.innerHTML=kod
+    </script>
+</body>
+
+</html>

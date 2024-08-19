@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="ntc"></span>
+    <script>
+      const ntc = document.getElementById('ntc')
+        let eded=["7","8","9","11","13"]
+        let eded2=["8","11","9"]
+        let ortaq=[]
+        for(let i=0; i<eded.length;i++){
+            for( let j=0;j<eded2.length;j++){
+                if(eded[i]===eded2[j]){
+                    ortaq.push(eded[i])
+                }
+            }
+        }
+        ntc.innerHTML=ortaq
+    </script>
+</body>
+</html>
